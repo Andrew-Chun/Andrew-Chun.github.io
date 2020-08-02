@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Andrew Chun Portfolio</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -43,7 +43,7 @@
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Software Engineer</p>
+                        <p class="text-white-75 font-weight-light mb-5">Full Stack Software Engineer</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,14 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">About Me</h2>
                         <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">I am a Duke University Alumnus with a B.S. in Economics with a Finance concentration.</p>
+                        <img class="mx-auto rounded-circle andrew" src="img/AndrewChun.jpeg" alt="">
+                        <p class="text-white-50 mb-4">
+                            I am full-stack software engineer based in Atlanta, GA.
+                            Programming has been an extremely rewarding journey for me and I am eager to continue to grow as a developer.
+                            <br><br>
+                            As Duke University alumnus with a B.S. in Economics with a Finance concentration,
+                            I've continued learning about new technologies and look forward to applying them to solve problems in the near future.
+                         </p>
                     </div>
                 </div>
             </div>
@@ -71,34 +78,41 @@
         </section>
         <!-- Portfolio-->
         <div id="portfolio">
-            <div class="container-fluid p-0">
+            <div class="container">
                 <h2 class="text-center mt-0">Projects</h2>
                 <hr class="divider my-4" />
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/tic-tac-toe.png">
-                            <img class="img-fluid" src="assets/img/portfolio/tic-tac-toe.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-name">Tic-Tac-Toe</div>
-                            </div>
-                        </a>
+                <div class="row">
+
+                    <div class="col-3 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <img class="img-fluid" src="img/portfolio/plusOne.png" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>plusOne</h4>
+                        <p class="text-muted">plusOne is a social event application developed using React framework that allows users to RSVP to events. </p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/golf-scorekeeper.png">
-                            <img class="img-fluid" src="assets/img/portfolio/golf-scorekeeper.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-name">Golf Scorekeeper</div>
-                            </div>
-                        </a>
+
+                    <div class="col-3 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <img class="img-fluid" src="img/portfolio/golf-scorekeeper.png" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Golf Scorekeeper</h4>
+                        <p class="text-muted">A single-page web application allowing users to keep track of their rounds of golf.</p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/plusOne.png">
-                            <img class="img-fluid" src="assets/img/portfolio/plusOne.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-name">plusOne</div>
-                            </div>
-                        </a>
+
+                    <div class="col-3 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <img class="img-fluid" src="img/portfolio/tic-tac-toe.png" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Tic Tac Toe</h4>
+                        <p class="text-muted">A web-based game of tic-tac-toe developed using HTML, CSS, JavaScript, and jQuery.</p>
+                      </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -123,6 +137,104 @@
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Developed by Andrew Chun using StartBootstrap</div></div>
         </footer>
+
+
+        <!-- Portfolio Modals -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>plusOne</h2>
+                        <p class="item-intro text-muted">A Social Event Hosting Site</p>
+                        <img class="img-fluid" src="img/portfolio/plusOne.png" alt="">
+                        <p>I worked with a team of 4 to build this full-stack React-based application. The backend API was built using an Express.js framework connected to a MongoDB database
+                        hosted on Heroku. Authenticated users can create, edit, delete, view, and RSVP to events on our platform.</p>
+                        <a href="https://chain-reaction1.github.io/plus-one-client" target="_blank"><button class="btn btn-primary" type="button">
+                            Deployed Site</button></a>
+                        <a href="https://github.com/Chain-Reaction1/plus-one-client" target="_blank"><button class="btn btn-primary" type="button">
+                            GitHub Repo</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2 class="text">Golf Scorekeeper</h2>
+                        <p class="item-intro text-muted"></p>
+                        <img class="img-fluid d-block mx-auto" src="img/portfolio/golf-scorekeeper.png" alt="">
+                        <p>
+                          For the frontend, I used HTML5, CSS, JavaScript, jQuery, Bootstrap and Handlebars. I developed the backend using Express.js framework with a MongoDB database.
+                        </p>
+                        <a href="https://andrew-chun.github.io/golf-scorekeeper-client/" target="_blank"><button class="btn btn-primary" type="button">
+                            Deployed Site</button></a>
+
+                        <a href="https://github.com/Andrew-Chun/golf-scorekeeper-client" target="_blank"><button class="btn btn-primary" type="button">
+                            GitHub Repo</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2 class="text">Tic-Tac-Toe</h2>
+                        <p class="item-intro text-muted"></p>
+                        <img class="img-fluid d-block mx-auto" src="img/portfolio/tic-tac-toe.png" alt="">
+                        <p>
+                         Authenticated users can create new games, view cumulative game stats,
+                          and select and finish incomplete games. I developed this game using HTML, CSS, JavaScript, and jQuery.
+                        </p>
+                        <a href="https://andrew-chun.github.io/tic-tac-toe" target="_blank"><button class="btn btn-primary" type="button">
+                            Deployed Site</button></a>
+
+                        <a href="https://github.com/Andrew-Chun/tic-tac-toe" target="_blank"><button class="btn btn-primary" type="button">
+                            GitHub Repo</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
