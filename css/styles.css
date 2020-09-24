@@ -10028,7 +10028,8 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #mainNav {
@@ -10173,4 +10174,8 @@ header.masthead h1 {
 .andrew {
     max-width: 50%;
     max-height: 50%;
+}
+
+#about {
+    max-height:
 }
