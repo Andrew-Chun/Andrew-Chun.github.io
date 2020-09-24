@@ -10171,9 +10171,20 @@ header.masthead h1 {
   height: 100px;
 }
 
+.image-cropper {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
 .andrew {
-    max-width: 50%;
-    max-height: 50%;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 #about {
