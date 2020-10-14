@@ -10187,6 +10187,10 @@ header.masthead h1 {
     width: 100%;
 }
 
+.description {
+    padding: 20px;
+}
+
 #about {
     max-height:
 }
